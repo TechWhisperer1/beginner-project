@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.Logo,
+.title {
+    display: inline-block;
+}
+.Logo {
+    background: rgb(46, 4, 144);
+    position: fixed;
+    width: 22%;
+    height: 100%;
+    padding: auto;
+    color: aliceblue;
+    border-radius: 15px 0 0 15px;
+}
+.logo {
+    margin: 30px;
+}
+.proof ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+.user-profile {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+.user-profile img {
+    background-color: white;
+}
+.Header {
+    background-color: aliceblue;
+    margin-left: 23%;
+    padding: 30px;
+    width: 73%;
+}
+.Header h1 {
+    color: black;
+}
+.title {
+    margin-left: 23%;
+}
+.container {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px 100px;
+}
+.title1,
+.con {
+    display: inline-block;
+}
+.con {
+    border: 1.5px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: inset;
+    padding: 27% 0 30px 30px;
+    align-items: center;
+}
+.details {
+    margin-left: 23%;
+    margin-right: 30px;
+    padding: 20px 0 90px 0;
+    border: 2px solid black;
+}
+.form-input {
+    width: 15%;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 6px 40px;
+    border: 1px solid rgb(105, 166, 237);
+}
+.title-com,
+.signer,
+.order,
+.location {
+    margin: 10px;
+    border-bottom: 2px solid black;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+.details label {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.details-location {
+    margin-bottom: 60px;
+}
+.appointment {
+    cursor: pointer;
+    padding: 20px 100px;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(105, 166, 237);
+    border-width: 0;
+    color: rgb(7, 7, 166);
+    display: flex;
+}
+.com-mail,
+.name-num {
+    padding-left: 40px;
+}
+.appointment:hover {
+    background-color: rgb(7, 7, 166);
+    color: aliceblue;
+}
+#location {
+    padding: 5px 30%;
+    margin-right: 50px;
+}
+.name-details,
+.company-details,
+.loan-order,
+.location-details {
+    padding: 40px;
+}
