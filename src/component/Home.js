@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Content } from "./Content";
 
 export const Home = () => {
     return (
@@ -8,26 +7,38 @@ export const Home = () => {
                 <section className="container">
                     <h2>Loan Signing Agent</h2>
                     <p>Suitable for those who have purchased a brand new car</p>
-                    <Link to="">
+                    <Link to="/Title" className="title-link">
                         <h5>View details</h5>
                     </Link>
                 </section>
                 <section className="container">
                     <h2>Remote Online Notary</h2>
                     <p>Suitable for those who already have a vaild third party cover</p>
-                    <Link to="/Title">
+                    <Link to="/Title" className="title-link">
                         <h5>View details</h5>
                     </Link>
                 </section>
                 <section className="container">
                     <h2>Mobile General Notary</h2>
                     <p>Suitable for those who the car infrequently</p>
-                    <Link to="">
+                    <Link to="/Title" className="title-link">
                         <h5>View details</h5>
                     </Link>
                 </section>
             </div>
-            <Content />
+            <div className="title2">
+                <section className="con">
+                    <form>
+                        <h3>Calculate your Costs for RON!</h3>
+                        <div>
+                            Document count: <input type="text" value="" />
+                        </div>
+                        <div for="">
+                            Signer count: <input type="text" name="" value="" />
+                        </div>
+                    </form>
+                </section>
+            </div>
         </div>
     );
 };

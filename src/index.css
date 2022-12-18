@@ -42,29 +42,35 @@ code {
     padding: 30px;
     width: 73%;
 }
-.Header h1 {
+.Header-link {
     color: black;
+    text-decoration: none;
 }
 .title {
     margin-left: 23%;
 }
+.title-link {
+    color: black;
+    text-decoration: none;
+}
+.title-link:hover {
+    color: rgb(101, 17, 210);
+}
 .container {
     border: 2px solid black;
-    margin: 10px;
+    margin: 7px;
     border-radius: 15px;
     padding: 10px 100px;
 }
 .title1,
-.con {
+.title2 {
     display: inline-block;
 }
 .con {
-    border: 1.5px solid black;
+    border: 2px solid black;
     margin: 10px;
-    border-radius: 5px;
-    box-shadow: inset;
-    padding: 27% 0 30px 30px;
-    align-items: center;
+    border-radius: 10px;
+    padding: 68% 80% 30px 10%;
 }
 .details {
     margin-left: 23%;
