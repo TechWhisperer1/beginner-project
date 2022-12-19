@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./component/Header";
 import { Home } from "./component/Home";
 import { Profile } from "./component/Profile";
-import { Title } from "./Details/Title";
+import { Title } from "./component/Title";
 
 function App() {
     return (

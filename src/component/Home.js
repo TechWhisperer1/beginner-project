@@ -13,7 +13,7 @@ export const Home = () => {
                 </section>
                 <section className="container">
                     <h2>Remote Online Notary</h2>
-                    <p>Suitable for those who already have a vaild third party cover</p>
+                    <p>Suitable for those who already have a valid third party cover</p>
                     <Link to="/Title" className="title-link">
                         <h5>View details</h5>
                     </Link>
@@ -31,10 +31,10 @@ export const Home = () => {
                     <form>
                         <h3>Calculate your Costs for RON!</h3>
                         <div>
-                            Document count: <input type="text" value="" />
+                            Document count: <input type="text" value="" className="con-input" />
                         </div>
                         <div for="">
-                            Signer count: <input type="text" name="" value="" />
+                            Signer count: <input type="text" name="" value="" className="con-input" />
                         </div>
                     </form>
                 </section>

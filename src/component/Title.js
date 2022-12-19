@@ -41,8 +41,6 @@ export const Title = () => {
                             placeholder="Enter Email"
                         />
                     </label>
-                </div>
-                <div className="name-num">
                     <label for="">
                         Phone Number
                         <input
@@ -81,8 +79,6 @@ export const Title = () => {
                             placeholder="Enter Agent Name"
                         />
                     </label>
-                </div>
-                <div className="com-mail">
                     <label for="">
                         Email
                         <input
