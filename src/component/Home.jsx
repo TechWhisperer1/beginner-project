@@ -7,7 +7,7 @@ export const Home = () => {
                 <section className="container">
                     <h2>Loan Signing Agent</h2>
                     <p>Suitable for those who have purchased a brand new car</p>
-                    <Link to="/Register" className="title-link">
+                    <Link to="/Title" className="title-link">
                         <h5>View details</h5>
                     </Link>
                 </section>

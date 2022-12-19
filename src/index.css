@@ -4,7 +4,6 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
 }
 
 code {
@@ -29,6 +28,7 @@ code {
     justify-content: center;
     margin-top: 10px;
     gap: 10px;
+    color: yellow;
 }
 .logo-img {
     width: 20px;
@@ -42,7 +42,9 @@ code {
     align-items: center;
     gap: 20px;
     padding: 10px;
-    backface-visibility: hidden;
+}
+.proof ul li span {
+    cursor: pointer;
 }
 .user-profile {
     padding: 20px 0 20px 0;
@@ -59,9 +61,18 @@ code {
     padding: 30px;
     width: 73%;
 }
-.Header-link {
-    color: black;
-    text-decoration: none;
+.Header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Header-link img {
+    width: 30px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    list-style-type: none;
+    background-color: aliceblue;
 }
 .title {
     margin-left: 30%;
@@ -96,6 +107,7 @@ code {
 }
 .details {
     margin-left: 23%;
+    height: 100%;
     margin-right: 30px;
     padding: 20px 0 50px 0;
     border: 2px solid black;
@@ -141,6 +153,5 @@ code {
 .company-details,
 .loan-order,
 .location-details {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 10px;
 }

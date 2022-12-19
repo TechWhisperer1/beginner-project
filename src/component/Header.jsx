@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
+import back from "../Image/back.png";
 export const Header = () => {
     return (
         <div className="Header">
-            <Link to="/" className="Header-link">
+            <div className="Header-top">
+                <Link to="/" className="Header-link">
+                    <img src={back} alt="" />
+                </Link>
                 <h1>New Appointment Request</h1>
-            </Link>
+            </div>
+
             <p>Some great coverage for less</p>
         </div>
     );

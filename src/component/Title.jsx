@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const Title = () => {
     const [name, setName] = useState("");
@@ -14,12 +14,16 @@ export const Title = () => {
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <div className="details">
-            <form className="details-signer">
-                <h3 className="signer">Signer Details</h3>
+            <form className="details-signer" onSubmit={handleSubmit}>
                 <div className="name-details">
-                    <label for="">
+                    <h3 className="signer">Signer Details</h3>
+                    <label htmlFor="name">
                         Full Name{" "}
                         <input
                             type="text"
@@ -30,7 +34,7 @@ export const Title = () => {
                             placeholder="Enter Name"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="email">
                         Email{" "}
                         <input
                             type="email"
@@ -41,7 +45,7 @@ export const Title = () => {
                             placeholder="Enter Email"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="number">
                         Phone Number
                         <input
                             type="text"
@@ -53,11 +57,9 @@ export const Title = () => {
                         />
                     </label>
                 </div>
-            </form>
-            <form className="details-company">
-                <h3 className="title-com">Title Company Details</h3>
                 <div className="company-details">
-                    <label for="">
+                    <h3 className="title-com">Title Company Details</h3>
+                    <label htmlFor="company">
                         Company Name
                         <input
                             type="text"
@@ -68,7 +70,7 @@ export const Title = () => {
                             placeholder="Enter Company Name"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="agent">
                         Agent Name
                         <input
                             type="text"
@@ -79,7 +81,7 @@ export const Title = () => {
                             placeholder="Enter Agent Name"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="company-email">
                         Email
                         <input
                             type="email"
@@ -90,7 +92,7 @@ export const Title = () => {
                             placeholder="Enter Email"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="phone">
                         Phone Number
                         <input
                             type="text"
@@ -102,11 +104,9 @@ export const Title = () => {
                         />
                     </label>
                 </div>
-            </form>
-            <form className="details-order">
-                <h3 className="order">Order Info</h3>
                 <div className="loan-order">
-                    <label for="">
+                    <h3 className="order">Order Info</h3>
+                    <label htmlFor="loan">
                         Escrow# / Loan No
                         <input
                             type="text"
@@ -117,7 +117,7 @@ export const Title = () => {
                             placeholder="Enter Loan Number"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="prop">
                         Property Address
                         <input
                             type="text"
@@ -129,11 +129,9 @@ export const Title = () => {
                         />
                     </label>
                 </div>
-            </form>
-            <form className="details-location">
-                <h3 className="location">Signing Location</h3>
                 <div className="location-details">
-                    <label for="">
+                    <h3 className="location">Signing Location</h3>
+                    <label htmlFor="location">
                         Enter Signing Location
                         <input
                             type="text"
@@ -144,7 +142,7 @@ export const Title = () => {
                             placeholder="Enter Location"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="date">
                         Date
                         <input
                             type="date"
@@ -155,7 +153,7 @@ export const Title = () => {
                             placeholder="Enter Date"
                         />
                     </label>
-                    <label for="">
+                    <label htmlFor="time">
                         Time
                         <input
                             type="time"
@@ -168,7 +166,7 @@ export const Title = () => {
                     </label>
                 </div>
             </form>
-            <button type="submit" className="appointment">
+            <button type="submit" className="appointment" onClick={handleSubmit}>
                 Schedule Appointment
             </button>
         </div>
