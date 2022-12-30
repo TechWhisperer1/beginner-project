@@ -9,6 +9,7 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
 .Logo,
 .title {
     display: inline-block;
@@ -28,12 +29,17 @@ code {
     justify-content: center;
     margin-top: 10px;
     gap: 10px;
-    color: yellow;
 }
+
 .logo-img {
     width: 20px;
     height: 20px;
     border-radius: 18px;
+}
+.bck {
+    text-decoration: none;
+    list-style-type: none;
+    color: yellow;
 }
 .proof ul li {
     text-decoration: none;
@@ -58,8 +64,8 @@ code {
 .Header {
     background-color: aliceblue;
     margin-left: 22%;
-    padding: 30px;
-    width: 73%;
+    padding: 6px 0 6px 30px;
+    width: 76%;
 }
 .Header-top {
     display: flex;
@@ -76,6 +82,8 @@ code {
 }
 .title {
     margin-left: 30%;
+    width: 70%;
+    overflow: hidden;
 }
 .title-link {
     color: black;
@@ -86,7 +94,7 @@ code {
 }
 .container {
     border: 2px solid black;
-    margin: 7px;
+    margin: 6px;
     border-radius: 15px;
     padding: 10px 100px;
 }
@@ -98,7 +106,7 @@ code {
     border: 2px solid black;
     margin: 10px;
     border-radius: 10px;
-    padding: 68% 80% 30px 10%;
+    padding: 68% 100% 30px 10%;
     text-align: center;
 }
 .con-input {
@@ -154,4 +162,68 @@ code {
 .loan-order,
 .location-details {
     padding: 10px;
+}
+.dash {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Image/front-view-arrangement-economy-elements.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+/* Register form */
+.register {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Image/inc.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.register-form input {
+    display: flex;
+    margin-top: 10px;
+    padding: 6px 20%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    border-bottom: 4px solid rgb(60, 7, 221);
+}
+.register-form div {
+    padding: 10px;
+}
+.register-form label {
+    color: white;
+}
+.pass-para {
+    color: white;
+    margin-left: 40%;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn {
+    margin: 10px;
+    padding: 15px 112px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(12, 19, 200);
+    color: white;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: white;
+    color: rgb(12, 19, 200);
+}
+
+/* Dashboard */
+.dash-nav {
+    justify-content: space-between;
+    color: white;
+    max-width: 1280px;
+    margin: auto;
+}
+.list-nav li,
+.list-nav li Link {
+    text-decoration: none;
+    list-style-type: none;
 }

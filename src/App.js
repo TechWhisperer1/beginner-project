@@ -1,17 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "./component/Header";
-import { Home } from "./component/Home";
-import { Profile } from "./component/Profile";
+import { Appointment } from "./component/Appointment";
+import { Dashboard } from "./component/Dashboard";
 import { Title } from "./component/Title";
+import { Login } from "./page/Login";
+import { Register } from "./page/Register";
 
 function App() {
     return (
         <BrowserRouter>
-            <Profile />
-            <Header />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Title" element={<Title />} />
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/Login" element={<Login />} />
+                <Route path="/Registration" element={<Register />} />
+                <Route path="/Appointment" element={<Appointment />} />
+                <Route path="/Appointment/Title" element={<Title />} />
             </Routes>
         </BrowserRouter>
     );

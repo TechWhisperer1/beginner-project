@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import id from "../Image/id.png";
 import location from "../Image/location.png";
 import mail from "../Image/mail.png";
@@ -9,8 +10,11 @@ import profile from "../Image/profile.png";
 export const Profile = () => {
     return (
         <section className="Logo">
-            <label for="" className="logo">
-                <img src={power} alt="logo" className="logo-img" /> BeInsurance
+            <label htmlFor="" className="logo">
+                <img src={power} alt="logo" className="logo-img" />{" "}
+                <Link to="/" className="bck">
+                    BeInsurance
+                </Link>
             </label>
             <div className="user-profile">
                 <img src={profile} alt="" />
